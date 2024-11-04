@@ -43,11 +43,12 @@ class MyMap
   V& get(const K& key) const;
   int getSize() const;
   bool isEmpty() const;
+  vector<Entry< K, V> > getEntries() const;
   vector<K> getKeys() const;
   vector<V> getValues() const;
   string toString() const;
   bool containsKey(const K& key) const;
-  bool containValue(const V& value) const;
+  bool containsValue(const V& value) const;
   void remove(const K& key);
   void clear();
 
